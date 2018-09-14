@@ -16,7 +16,7 @@ ul {
 /* navigation style */
 li{
 	text-decoration: none;
-	display:inline-flex;
+	display:inline;
     color: green;
     padding: 16px;
     text-align: right;
