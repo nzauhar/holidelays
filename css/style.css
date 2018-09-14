@@ -11,10 +11,10 @@ ul {
 
 /* navigation style */
 li{
-	text-decoration: none;
-	display:block;
+    text-decoration: none;
+    display:block;
     color: green;
-    padding: 14px 16px;
+    padding: 16px;
     text-align: left;
 }
 
