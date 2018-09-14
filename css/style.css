@@ -1,0 +1,19 @@
+body{
+    background-color:#FECC66;
+}
+
+li{
+	text-decoration: none;
+	display:inline;
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration-line: underline;
+}
+
+/* selected link */
+a:active {
+    color: red;
+}
