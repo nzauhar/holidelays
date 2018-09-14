@@ -2,7 +2,7 @@ body{
     background-color: lightblue;
 }
 
-/* fixed navigation at the top */
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -11,22 +11,22 @@ ul {
     background-color: white;
 }
 
-/* navigation style */
+
 li {
     text-decoration: none;
-    display: inline-block;
+    display: inline;
     color: green;
     padding: 16px;
     text-align: left;
 }
 
-/* active page */
+
 li a:hover:not(.active) {
     background-color:red;
     color: white;
 }
 
-/* active page */
+
 li a.active {
     background-color: #4CAF50;
     color: white;
