@@ -15,11 +15,11 @@ ul {
 
 /* navigation style */
 li{
-	text-decoration: none;
-	display:inline-flex;
+    text-decoration: none;
+    display: inline-block;
     color: green;
     padding: 16px;
-    text-align: left;
+    text-align: right;
 }
 
 /* active page */
