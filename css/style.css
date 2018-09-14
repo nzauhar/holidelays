@@ -1,0 +1,29 @@
+body{
+    background-color: lightblue;
+}
+
+/* fixed navigation at the top */
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* navigation style */
+li{
+	text-decoration: none;
+	display:block;
+    color: green;
+    padding: 14px 16px;
+    text-align: left;
+}
+
+/* active page */
+li a:hover {
+    text-decoration-line: underline;
+}
+
+/* active page */
+li a:active {
+    color: red;
+}
