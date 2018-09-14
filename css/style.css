@@ -2,28 +2,34 @@ body{
     background-color: lightblue;
 }
 
+/* fixed navigation at the top */
 ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    }
 }
 
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-}
-/* active page */
-li a:hover {
-    text-decoration-line: underline;
+/* navigation style */
+li{
+	text-decoration: none;
+	display:inline-flex;
+    color: green;
+    padding: 16px;
+    text-align: right;
 }
 
 /* active page */
-li a:active {
-    color: red;
+li a:hover:not(.active) {
+    background-color:red;
+    color: white;
+}
+
+/* active page */
+li a.active {
+    background-color: #4CAF50;
+    color: white;
 }
