@@ -2,22 +2,22 @@ body{
     background-color: lightblue;
 }
 
-/* fixed navigation at the top */
 ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-/* navigation style */
-li{
-    text-decoration: none;
-    display:block;
-    color: green;
-    padding: 16px;
-    text-align: left;
+li {
+    float: right;
 }
 
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
 /* active page */
 li a:hover {
     text-decoration-line: underline;
