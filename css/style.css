@@ -1,5 +1,5 @@
 body{
-    background-color: lightblue;
+    background-color: transparent
 }
 
 
@@ -16,7 +16,7 @@ li {
     text-decoration: none;
     display: inline;
     color: green;
-    padding: 16px 16px;
+    padding: 16px 14px;
     text-align: left;
 }
 
