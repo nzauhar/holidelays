@@ -26,6 +26,6 @@ li a:hover:not(.active) {
 }
 
 
-li a.active {
+a.active {
     color: red
 }
