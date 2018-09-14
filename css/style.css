@@ -22,12 +22,10 @@ li {
 
 
 li a:hover:not(.active) {
-    background-color:red;
-    color: white;
+    color: green;
 }
 
 
 li a.active {
-    background-color: #4CAF50;
-    color: white;
+    color: red;
 }
