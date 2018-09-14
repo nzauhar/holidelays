@@ -4,9 +4,6 @@ body{
 
 /* fixed navigation at the top */
 ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -15,7 +12,7 @@ ul {
 }
 
 /* navigation style */
-li{
+li {
     text-decoration: none;
     display: inline-block;
     color: green;
