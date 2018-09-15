@@ -45,15 +45,6 @@ li a.active {
    to {left: 102%;}
  }
 
- /* main container */
-.container{
-	top:0px;
-	width:100%;
-	height:100%;
-	position:absolute;
-	left:0%;
-
-}
 
 .fallingSnow {
     text-align: center;
