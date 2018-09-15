@@ -30,27 +30,7 @@ li a.active {
     color: red
 }
 
-body {
-    background: skyblue;
- }
- 
- .airPlane {
-   animation: fly 900ms ease-in-out 0s infinite alternate;
-   transition: top  1s;
-     top: 0;
-   position: relative;
-   margin: 0 auto;
-   margin-top: 50px;
-   z-index: 9999;
-   display: block;
- }
- 
- 
- @keyframes fly {
-   0% {top: 0;}    
-   100% {top:15px;}
- }
- 
+
  .cloud {
    position: absolute;
    top: 100px;
