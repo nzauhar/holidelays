@@ -41,6 +41,6 @@ li a.active {
  }
  
  @keyframes cloud {
-   from {right:500px;}
-   to {right: 102%;}
+   from {left:-500px;}
+   to {left: 102%;}
  }
