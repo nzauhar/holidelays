@@ -31,16 +31,16 @@ li a.active {
 }
 
 
- .cloud {
+ .airplane {
    position: absolute;
    top: 100px;
    right: -500px;
    opacity: .8;
-    animation: cloud 20s linear 0s infinite reverse;
+    animation: airplane 20s linear 0s infinite reverse;
    z-index: 99;
  }
  
- @keyframes cloud {
+ @keyframes airplane {
    from {left:-500px;}
    to {left: 102%;}
  }
