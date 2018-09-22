@@ -1,0 +1,167 @@
+body{
+    background-color: transparent;
+}
+
+/* navigation style */
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color:transparent;
+}
+
+
+li {
+    text-decoration: none;
+    display: inline;
+    padding: 16px 14px;
+    text-align: left;
+}
+
+
+li a:hover:not(.active) {
+    color: forestgreen;
+}
+
+
+/* figuring out how to make background image on homepage with css */  
+/* .home {
+    background: url(..images/plain-tree-bkg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+
+/* airplane animation */
+
+ .airplane {
+   position: absolute;
+   top: 100px;
+   right: -500px;
+   opacity: .8;
+    animation: airplane 20s linear 0s infinite reverse;
+   z-index: 99;
+ }
+ 
+ @keyframes airplane {
+   from {left:-500px;}
+   to {left: 102%;}
+ }
+
+ /* flight or no flight boarding tickets container */
+ .flex-container {
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+.grid-container {
+    display: grid;
+    height: 600px;
+    align-content: center;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+    background-color:rgba(0, 140, 255, 0.452);
+    padding: 10px;
+  }
+.grid-container > div {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* snow container and animations */
+.container{
+	top:30px;
+	width:100%;
+	height:100%;
+	position:absolute;
+    left:0%;
+}
+
+.fallingSnow {
+    text-align: center;
+}
+.fallingSnow span {
+    display: inline-block;
+    width: 20px;
+    height: 21px;
+	margin: -280px 60px 54px  -34px;
+    background:url("../images/snowflake.png");
+    
+    -webkit-animation: fallingSnow 12s infinite  cubic-bezier(0.35,0.45,0.39,0.29);
+    -moz-animation: fallingSnow 12s infinite  cubic-bezier(0.35,0.45,0.39,0.29);
+}
+.fallingSnow span:nth-child(5n+5) {
+
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+}
+.fallingSnow span:nth-child(3n+2) {
+
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+}
+.fallingSnow span:nth-child(2n+5) {
+
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+}
+
+.fallingSnow span:nth-child(3n+10) {
+
+    -webkit-animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+}
+.fallingSnow span:nth-child(7n+2) {
+
+    -webkit-animation-delay: 3.5s;
+    -moz-animation-delay: 3.5s;
+}
+.fallingSnow span:nth-child(4n+5) {
+
+    -webkit-animation-delay: 5.5s;
+    -moz-animation-delay: 5.5s;
+}
+.fallingSnow span:nth-child(3n+7) {
+
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+}
+@-webkit-keyframes fallingSnow {
+  0% {
+    opacity: 1;
+
+	-webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    opacity: 1;
+
+	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+  }
+  100% {
+    opacity: 0;
+
+	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+  }
+}
+@-moz-keyframes fallingSnow {
+  0% {
+    opacity: 1;
+    
+	-webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    opacity: 1;
+   
+	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+  }
+  100% {
+    opacity: 0;
+    
+	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+  }
+}
+
