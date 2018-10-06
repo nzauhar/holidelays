@@ -1,44 +1,94 @@
+
+/***** Global Styles ******/
 body{
     background-color: transparent;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* navigation style */
-ul {
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-    overflow: hidden;
-    background-color:transparent;
+h1{
+    font-family: 'Elsie', cursive;
+    font-size: 40px;
+    font-weight: 400;
 }
 
+  
+/* _navigation style */
 
-li {
-    text-decoration: none;
-    display: inline;
-    padding: 16px 14px;
-    text-align: left;
-}
-
-
-li a:hover:not(.active) {
-    color: forestgreen;
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
-/* figuring out how to make background image on homepage with css */  
-/* .home {
-    background: url(..images/plain-tree-bkg.jpg) no-repeat center center fixed; 
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 15px 15px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1em;
+    z-index: 1000;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+.nav-style a {
+	color: rgba(0,0,0,0.2);
+	font-weight: 500;
+    text-shadow: none;
+    padding: 12px;
+}
+
+.nav-style a::before {
+	color: #fff;
+	content: attr(data-hover);
+	position: absolute;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-style a:hover::before,
+.nav-style a:focus::before {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0;
+}
+
+.current{
+    background:rgb(48, 199, 244);
+}
+/***** Homepage Styles *****/
+
+/* background image on homepage */  
+.home{
+    background-image: url(../images/plain-tree-bkg.jpg);
+    background-position: center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-} */
+}
 
 /* airplane animation */
 
  .airplane {
    position: absolute;
-   top: 100px;
+   top: 40px;
    right: -500px;
    opacity: .8;
     animation: airplane 20s linear 0s infinite reverse;
@@ -50,7 +100,12 @@ li a:hover:not(.active) {
    to {left: 102%;}
  }
 
- /* flight or no flight boarding tickets container */
+ /***** Flight or No Flight Page Styles *****/
+ 
+ .flight{
+    background-color:rgb(153, 222, 248);
+}
+ /* boarding tickets container */
  .flex-container {
     display: flex;
     height: 500px;
@@ -64,7 +119,7 @@ li a:hover:not(.active) {
     align-content: center;
     grid-template-columns: auto auto auto auto;
     grid-gap: 5px;
-    background-color:rgba(0, 140, 255, 0.452);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
   }
 .grid-container > div {
@@ -72,9 +127,18 @@ li a:hover:not(.active) {
     padding: 10px 0;
   }
 
-  /* snow container and animations */
+/***** Wheel of Misfortune Styles *****/  
+.wheel{
+    background-color: rgb(153, 222, 248);
+}
+/***** About Page Styles *****/
+.about{
+    background-color:rgb(153, 222, 248);
+}
+
+/* snow container and animations */
 .container{
-	top:30px;
+	top:0px;
 	width:100%;
 	height:100%;
 	position:absolute;
@@ -96,18 +160,18 @@ li a:hover:not(.active) {
 }
 .fallingSnow span:nth-child(5n+5) {
 
-    -webkit-animation-delay: 1.3s;
-    -moz-animation-delay: 1.3s;
-}
-.fallingSnow span:nth-child(3n+2) {
-
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
 }
-.fallingSnow span:nth-child(2n+5) {
+.fallingSnow span:nth-child(3n+2) {
 
     -webkit-animation-delay: 1.7s;
     -moz-animation-delay: 1.7s;
+}
+.fallingSnow span:nth-child(2n+5) {
+
+    -webkit-animation-delay: 2.2s;
+    -moz-animation-delay: 2.2s;
 }
 
 .fallingSnow span:nth-child(3n+10) {
