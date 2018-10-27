@@ -10,7 +10,6 @@ h1{
     font-size: 40px;
     font-weight: 400;
 }
-
   
 /* _navigation style */
 
@@ -20,7 +19,7 @@ h1{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
+} 
 
 
 nav a {
@@ -72,17 +71,16 @@ nav a:focus {
 }
 /***** Homepage Styles *****/
 
-/* background image on homepage */  
-.home{
-    background-image: url(../images/plain-tree-bkg.jpg);
-    background-position: center center fixed;
+/* background image on homepage   */
+/* .home{
+    background: url(../images/xmas-tree.jpg) no-repeat center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+} */
 
 /* airplane animation */
 
@@ -106,7 +104,7 @@ nav a:focus {
     background-color:rgb(153, 222, 248);
 }
  /* boarding tickets container */
- .flex-container {
+ /* .flex-container {
     display: flex;
     height: 500px;
     flex-wrap: wrap;
@@ -125,12 +123,28 @@ nav a:focus {
 .grid-container > div {
     text-align: center;
     padding: 10px 0;
-  }
+  } */
 
 /***** Wheel of Misfortune Styles *****/  
 .wheel{
     background-color: rgb(153, 222, 248);
 }
+
+.candy-wheel{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 500px;
+    height: 500px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 15s linear infinite;
+    -moz-animation:spin 15s linear infinite;
+    animation:spin 15s linear infinite;
+    }
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 /***** About Page Styles *****/
 .about{
     background-color:rgb(153, 222, 248);
@@ -139,8 +153,9 @@ nav a:focus {
 /* snow container and animations */
 .container{
 	top:0px;
-	width:100%;
-	height:100%;
+    width:100%;
+    height:100vh;
+	/* height:100%; */
 	position:absolute;
     left:0%;
 }
